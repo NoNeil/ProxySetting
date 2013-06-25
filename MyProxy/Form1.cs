@@ -112,9 +112,7 @@ namespace MyProxy
                 string sql = "CREATE TABLE Proxy(ProxyName varchar(20) unique, IP varchar(20), Port varchar(10))";
                 sqlite.ExecuteNonQuery(sql);
 
-                //添加一个用户
-                sql = "INSERT INTO Proxy VALUES('cs', 'cs.bit.edu.cn', '2804')";
-                sqlite.ExecuteNonQuery(sql);
+                //添加一个代理
                 sql = "INSERT INTO Proxy VALUES('108', '10.108.12.56', '8085')";
                 sqlite.ExecuteNonQuery(sql);            
                 
